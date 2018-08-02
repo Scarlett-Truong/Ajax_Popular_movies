@@ -34,7 +34,8 @@ $(document).ready(function(){
     callAjax(pageNum);
 
     //Load next page 
-    $('#next').on('click',function(){
+    $('#next').on('click',function(e){
+        e.preventDefault();
         $('#result').html('');
         $('#previous').show();
         pageNum += 1;
@@ -43,6 +44,7 @@ $(document).ready(function(){
 
     //Load previous page 
     $('#previous').on('click',function(){
+        e.preventDefault();
         $('#result').html('');
         pageNum -= 1;
         if(pageNum == 1 ) $('#previous').hide();
