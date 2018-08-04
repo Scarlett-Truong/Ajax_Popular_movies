@@ -1,6 +1,10 @@
 $(document).ready(function(){
     var pageNum = 1;
     $('#previous').hide();
+    $(function() {
+        $("body").tooltip({ selector: '[data-tooltip=tooltip]' });
+    });
+
 
     //Create function to call AJAX
     var callAjax = function(pageNum){
@@ -43,11 +47,12 @@ $(document).ready(function(){
     });
 
     //Load previous page 
-    $('#previous').on('click',function(){
+    $('#previous').on('click',function(e){
         e.preventDefault();
         $('#result').html('');
         pageNum -= 1;
         if(pageNum == 1 ) $('#previous').hide();
         callAjax(pageNum);
+        // console.log(pageNum);
     });  
 });

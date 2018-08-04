@@ -31,3 +31,22 @@ h5{
 .modal-body{
     padding: 1rem 2rem;
 }
+
+.tooltip-inner{
+    max-width: 290px;
+    padding: 10px 10px;
+    font-size: 0.8rem;
+    text-align: left;
+    background-color: palevioletred;  
+    opacity:1; 
+}
+
+.title + .tooltip > .tooltip-arrow {
+    border-bottom: 5px solid palevioletred;
+    background-color: palevioletred;
+    color: palevioletred;
+}
+
+.tooltip .tooltip-arrow {
+    border-bottom-color: palevioletred;
+}
