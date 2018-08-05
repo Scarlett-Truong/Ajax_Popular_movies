@@ -23,7 +23,6 @@ $(document).ready(function(){
                     data.results.forEach(function(value){
                         if(value.id == movieId){
                             $('#exampleModalLongTitle').text(value.title);
-                            console.log(value.release_date);
                             $('.modal-body p').text('Release on '+value.release_date);
                             $('.modal-body img').attr('src','https://image.tmdb.org/t/p/w500'+value.poster_path);
                         }
