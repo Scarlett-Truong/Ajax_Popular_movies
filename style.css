@@ -41,8 +41,9 @@ h5{
     opacity:1; 
 }
 
-.tooltip > .arrow:before {
+.tooltip > .arrow:before{
     border-bottom-color: palevioletred;
+    border-top-color: palevioletred;
 }
 
 .tooltip.show {
