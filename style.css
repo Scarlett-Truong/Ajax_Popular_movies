@@ -37,16 +37,15 @@ h5{
     padding: 10px 10px;
     font-size: 0.8rem;
     text-align: left;
-    background-color: palevioletred;  
+    background-color:palevioletred;  
     opacity:1; 
 }
 
-.title + .tooltip > .tooltip-arrow {
-    border-bottom: 5px solid palevioletred;
-    background-color: palevioletred;
-    color: palevioletred;
-}
-
-.tooltip .tooltip-arrow {
+.tooltip > .arrow:before {
     border-bottom-color: palevioletred;
 }
+
+.tooltip.show {
+    opacity: 1;
+    filter:alpha(opacity=100);
+  }

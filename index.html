@@ -14,7 +14,7 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>Popular movies</h1>
+    <h1 id="test" data-tooltip="tooltip" data-placement="bottom" title="bla bla" data-trigger="click">Popular movies</h1>
     <div id="container">
         <table class="table table-hover table-bordered">
             <thead class="table-info">
@@ -58,7 +58,7 @@
     <script id='template' type="text/template">
         {{#results}}
         <tr>
-            <th scope="row" class='title' data-toggle="modal" data-tooltip="tooltip"  data-placement="bottom" title="{{overview}}" data-target="#exampleModalCenter" data-value='{{id}}'>{{title}}</th>
+            <th scope="row" class='title' data-toggle="modal" data-tooltip="tooltip"  data-placement="bottom" title="{{overview}}" data-trigger="click" data-target="#exampleModalCenter" data-value='{{id}}'>{{title}}</th>
             <td>{{vote_count}}</td>
             <td>{{vote_average}}</td>
             <td>{{popularity}}</td>
